@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 16px is browser default font size */
+  /* font-size: 10px; */
+  /* 10px /16px = 0.632 = 62.5% */
+  /* percentage of user's browesr font size setting */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #555;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* genral component?*/
+.grid--2--col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.3rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.heading-secondary,
+.heading-primary,
+.heading-tertiary {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+.btn:hover,
+.nav-cta:hover {
+  box-shadow: 0 0 0 0.8rem rgb(235, 152, 78, 0.7);
+}
